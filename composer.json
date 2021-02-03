@@ -1,0 +1,36 @@
+{
+	"name": "kg-bot/laravel-woocommerce",
+	"description": "WooCommerce REST API package for Laravel",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Stefan Ninic",
+			"email": "ninicstefan94@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=7.1",
+		"laravel/framework": "^5.5|^6|^7",
+		"guzzlehttp/guzzle": "*",
+		"ext-json": "*",
+		"spatie/guzzle-rate-limiter-middleware": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"KgBot\\WooCommerce\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"KgBot\\WooCommerce\\WooCommerceServiceProvider"
+			]
+		}
+	},
+	"funding": [
+		{
+			"type": "buy-me-a-coffee",
+			"url": "https://rebrand.ly/laravel-woocommerce"
+		}
+	]
+}
